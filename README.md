@@ -1,7 +1,6 @@
 [![*nix build status][nix-build-image]][nix-build-url]
 [![Windows build status][win-build-image]][win-build-url]
 [![Tests coverage][cov-image]][cov-url]
-[![npm version][npm-image]][npm-url]
 
 # aws-lambda-handler
 
@@ -50,12 +49,6 @@ module.exports = (...) => {
 }
 ```
 
-### Installation
-
-```bash
-npm install aws-lambda-handler
-```
-
 ### Tests
 
 ```bash
@@ -69,5 +62,3 @@ npm test
 [cov-image]: https://img.shields.io/codecov/c/github/medikoo/aws-lambda-handler.svg
 [cov-url]: https://codecov.io/gh/medikoo/aws-lambda-handler
 [transpilation-image]: https://img.shields.io/badge/transpilation-free-brightgreen.svg
-[npm-image]: https://img.shields.io/npm/v/aws-lambda-handler.svg
-[npm-url]: https://www.npmjs.com/package/aws-lambda-handler
