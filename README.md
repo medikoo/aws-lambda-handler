@@ -9,7 +9,7 @@
 When relying directly on basic AWS interface we're immune to handler setup errors which are not transparently reported by AWS:
 
 -   Using _callback_ resolution we invoke call callback twice (and we're not restricted from invoking _callback_ coming from previous invocation). All those superfluous invocations are silently ignored by AWS.
--   Using _promise_ resolution, invocation is resolved immediately after returned promise resolves. This leaves us with no feedback of eventually orphaned async flows (which may be result of typical errors as omitted `await` or `return`) and which are eventually is executed in next lambda invocation
+-   Using _promise_ resolution, invocation is resolved immediately after returned promise resolves. This leaves us with no feedback of eventually orphaned async flows (which may be result of typical errors as omitted `await` or `return`) and which are eventually executed in next lambda invocation
 
 This **handler makes above errors either impossible to make or properly exposed**, and additionally:
 
